@@ -1,0 +1,18 @@
+# AI Exam Monitoring System — Dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Core AI / Vision ──────────────────────────────────────────────────
+ultralytics>=8.3.0         # YOLO11 + ByteTrack (tracker bundled inside)
+torch>=2.0.0               # PyTorch CPU (auto-selected if no GPU)
+torchvision>=0.15.0        # Required by Ultralytics
+
+# ── Image processing ──────────────────────────────────────────────────
+opencv-python>=4.8.0       # Video capture, drawing, display
+numpy>=1.24.0              # Array operations
+
+# ── Data / Reports ────────────────────────────────────────────────────
+pandas>=2.0.0              # Optional: for CSV analysis / report generation
+
+# ── (Optional) Advanced features ─────────────────────────────────────
+# mediapipe>=0.10.0        # Uncomment for face mesh / gaze estimation
+# supervision>=0.16.0      # Uncomment for advanced annotation utilities
