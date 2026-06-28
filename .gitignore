@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+
+# Model weights (large binary files — download separately)
+models/*.pt
+models/*.onnx
+
+# Output data (generated at runtime)
+output/logs/
+output/reports/
+output/annotated_frames/
+
+# Video files
+videos/*.mp4
+videos/*.avi
+videos/*.mov
+
+# Dataset (too large for git — use DVC or cloud storage)
+dataset/raw/
+dataset/annotated/
+dataset/splits/
+
+# OS
+.DS_Store
+Thumbs.db
